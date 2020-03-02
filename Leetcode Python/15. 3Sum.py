@@ -1,6 +1,6 @@
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
-        n = len(nums) # Reduce calculate lenth again
+        n = len(nums) # Reduce calculating length again
         nums.sort() 
         result = [] # Output
         for i in range(len(nums) - 2):
