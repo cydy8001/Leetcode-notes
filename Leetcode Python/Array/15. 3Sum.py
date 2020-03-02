@@ -1,3 +1,6 @@
+/*
+Tips: Avoid calculating again, avoid repeated elements
+*/
 from typing import List
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
