@@ -1,14 +1,14 @@
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
-        n = len(nums)
-        nums.sort()
-        result = []
+        n = len(nums) # Reduce calculate lenth again
+        nums.sort() 
+        result = [] # Output
         for i in range(len(nums) - 2):
             if (nums[i] > 0):
                 break
             if (nums[i] + nums[n - 1] + nums[n - 2] < 0):
                 continue
-            if i > 0 and nums[i] == nums[i - 1]:
+            if i > 0 and nums[i] == nums[i - 1]: # Avoid duplicate elements using i - 1
                 continue
             l = i + 1
             r = n - 1
